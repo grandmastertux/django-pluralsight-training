@@ -46,3 +46,13 @@ Issues in starting off the Training:
 
     NOTE: If I need a different version of django then I would run
         pip install django==1.9
+
+    django-admin startproject tictactoe
+    cd .\tictactoe
+    python.exe .\manage.py runserver
+
+    Files of interest created in the new project:
+        1. settings.py = how the project is defined to configure the project
+        2. urls.py = assigns URL's to the various pages
+        3. wsgi.py = used for deploying to a production server
+        
