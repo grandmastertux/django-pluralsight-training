@@ -92,3 +92,20 @@ Issues in starting off the Training:
         python.exe .\manage.py sqlmigrate appname(gameplay) migrationame(0001)
     #Step 3: Run Migrations
         python.exe .\manage.py migrate
+
+
+    -------------------------------------
+    Enabled the Admin interface already and creating a super user by doing:
+        python.exe .\manage.py createsuperuser
+    Starting a shell for your current project
+        python.exe .\manage.py shell
+
+    In this tutorial we created a Game Model
+        Game.objects = (class attribute objects)
+        Game.objects.get(pk=5) = get() returns a single instance and will throw an exception when no matched or more than 1 match occurs
+        Game.objects.all() = all() returns all rows
+        Game.objects.filter(status='A') = filter() returns matching objects
+                                          exclude() does the opposite 
+
+    -------------------------------------
+    
