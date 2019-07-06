@@ -1,3 +1,10 @@
 {
-    "python.pythonPath": "django-env\\Scripts\\python.exe"
+    "python.pythonPath": "django-env\\Scripts\\python.exe",
+    "sqltools.connections": [
+        {
+            "database": ".\\tictactoe\\db.sqlite3",
+            "dialect": "SQLite",
+            "name": "TicTacToe"
+        }
+    ]
 }

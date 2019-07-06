@@ -55,4 +55,28 @@ Issues in starting off the Training:
         1. settings.py = how the project is defined to configure the project
         2. urls.py = assigns URL's to the various pages
         3. wsgi.py = used for deploying to a production server
-        
+    
+    urls.py
+        path(r'^welcome$',welcome) - (regex of the url, name of the view function)
+            If only using the carrot at the beginning it would force that is had to start with welcome
+            If only using the dollar sign at the end, it would force that had to end with welcome
+            If using both, it would need to be an exact match of welcome
+            If not using either, then any url that contains welcome will work
+            If we want welcome to be at the root URL, then keep carrot and dollar sign and remove the word welcome
+
+    When creating a new project, predefined apps will be included with your django project.
+    Migrations are Django’s way of propagating changes you make to your models (adding a field, deleting a model, etc.) into your database schema. 
+        python.exe .\manage.py showmigrations
+        python.exe .\manage.py migrate - runs all pending migrations
+    
+    python.exe .\manage.py startapp gameplay
+        admin.py - configure django admin interface
+        apps.py - configures the app itself
+        models.py - model classes for this app
+        tests.py - unit testing
+        views.py - gameplay views
+        __init__.py - makes this into a Python package
+
+    After updating models.py then run - python.exe .\manage.py makemigrations
+    To see the SQL that will be created independent of the platform run - python.exe .\manage.py sqlmigrate gameplay 0001
+    After making changes to the model.py run - python.exe .\manage.py makemigrations and then python.exe .\manage.py migrate
