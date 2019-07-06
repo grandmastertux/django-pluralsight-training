@@ -1,4 +1,6 @@
+
 # django-pluralsight-training
+
 Django Pluralsight Training - Django Fundamentals
 
 Issues in starting off the Training:
@@ -66,7 +68,7 @@ Issues in starting off the Training:
 
     When creating a new project, predefined apps will be included with your django project.
     Migrations are Django’s way of propagating changes you make to your models (adding a field, deleting a model, etc.) into your database schema. 
-        python.exe .\manage.py showmigrations
+        python.exe .\manage.py showmigrations - Show pending/applied migrations
         python.exe .\manage.py migrate - runs all pending migrations
     
     python.exe .\manage.py startapp gameplay
@@ -80,3 +82,13 @@ Issues in starting off the Training:
     After updating models.py then run - python.exe .\manage.py makemigrations
     To see the SQL that will be created independent of the platform run - python.exe .\manage.py sqlmigrate gameplay 0001
     After making changes to the model.py run - python.exe .\manage.py makemigrations and then python.exe .\manage.py migrate
+
+    #Step 1: Change Model Code
+    #Step 2: Generate Migration Script (check it!)
+        python.exe .\manage.py makemigrations
+    #Optional: Show Migrations
+        python.exe .\manage.py showmigrations
+    #Optional: Show SQL for specific migration
+        python.exe .\manage.py sqlmigrate appname(gameplay) migrationame(0001)
+    #Step 3: Run Migrations
+        python.exe .\manage.py migrate
