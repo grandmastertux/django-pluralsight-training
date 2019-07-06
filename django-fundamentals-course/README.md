@@ -108,4 +108,8 @@ Issues in starting off the Training:
                                           exclude() does the opposite 
 
     -------------------------------------
-    
+    Templates go in templates/ dir in your app
+    Best practice:
+        Use a dir under templates/
+        Name it after your app
+        project(tictactoe)/app(player)/templates/app(player)/templt.html(home.html)
